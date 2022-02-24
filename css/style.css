@@ -1,6 +1,13 @@
+/* this undoes the italic thing from skeleton */
 .fa-brands, .fa-solid {
 	font-style: normal !important;
 }
+
+.giant-icon {
+	font-size: 50px;
+	margin: 25px;
+}
+
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -8,14 +15,14 @@
   padding: 8rem 0 7rem;
   text-align: center;
 }
-.section-heading {
+.section-heading, .section-subheading {
 	font-family: 'Amaranth', serif !important;
 	font-weight: bold;
-	text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
+	/*text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);*/
 }
 
 .section-description {
-	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+	/* text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7); */
 }
 
 .section-heading,
@@ -77,32 +84,32 @@
 }
 
 .platform {
-  background-color: rgba(0, 0, 255, 1);
+  background-color: rgba(0, 128, 255, 1);
   color: #fff;
 }
 
 .hardware {
-  background-color: rgba(0, 255, 0, 1);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
 }
 
 .development {
-  background-color: rgba(0, 255, 0, 1);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
 }
 
 .services {
-  background-color: rgba(0, 255, 0, 1);
+  background-color: rgba(0, 128, 255, 1);
   color: #fff;
 }
 
 .advertising {
-  background-color: rgba(0, 255, 0, 1);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
 }
 
 .projects {
-  background-color: rgba(0, 255, 0, 1);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
 }
 
