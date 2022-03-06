@@ -242,17 +242,19 @@
 				<form method="POST">
 					<div class="row">
 						<div class="six columns">
+							<label for="contact-name">Your name</label>
+							<input class="u-full-width" type="text" id="contact-name">
+						</div>
+						<div class="six columns">
 							<label for="contact-email">Your email</label>
 							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="contact-email">
 						</div>
-						<div class="six columns">
-							<label for="contact-reason">Reason for contacting</label>
-							<select class="u-full-width" id="contact-reason">
-								<option>Just asking</option>
-								<option>ResourciBoard</option>
-							</select>
-						</div>
 					</div>
+					<label for="contact-reason">Reason for contacting</label>
+					<select class="u-full-width" id="contact-reason">
+						<option>Just asking</option>
+						<option>ResourciBoard</option>
+					</select>
 					<label for="contact-message">Message</label>
 					<textarea class="u-full-width" placeholder="Hi…" id="contact-message"></textarea>
 					<button class="button-primary" type="submit" onclick="contact_form(event)">Send</button>
