@@ -36,10 +36,10 @@ function contact_form(e) {
 
        var URL = "https://qjn2mh8df7.execute-api.ap-southeast-2.amazonaws.com/";
        var DATA = {
-          name : document.getElementById("contact-name").value(),
-          email : document.getElementById("contact-email").value(),
-          reason : document.getElementById("contact-reason").value(),
-          message : document.getElementById("contact-message").value()
+          name : document.getElementById("contact-name").value,
+          email : document.getElementById("contact-email").value,
+          reason : document.getElementById("contact-reason").value,
+          message : document.getElementById("contact-message").value
         };
 	var HEADERS = {
 		"Content-Type": "application/json",
