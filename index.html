@@ -239,7 +239,7 @@
 		<div class="section contact">
 			<div class="container">
 				<h2 class="section-heading">Register your interest</h2>
-				<form>
+				<form method="POST">
 					<div class="row">
 						<div class="six columns">
 							<label for="exampleEmailInput">Your email</label>
@@ -256,7 +256,7 @@
 					</div>
 					<label for="exampleMessage">Message</label>
 					<textarea class="u-full-width" placeholder="Hi…" id="exampleMessage"></textarea>
-					<input class="button-primary" type="submit" value="Submit">
+					<button class="button-primary" type="submit" onclick="contact_form(event)">Send</button>
 				</form>
 			</div>
 		</div>
