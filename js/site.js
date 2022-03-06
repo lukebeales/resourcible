@@ -34,7 +34,8 @@ $(document).ready(function() {
 function contact_form(e) {
        e.preventDefault();
 
-       var URL = "https://qjn2mh8df7.execute-api.ap-southeast-2.amazonaws.com/";
+       // var URL = "https://qjn2mh8df7.execute-api.ap-southeast-2.amazonaws.com/";
+       var URL = "https://a9burwlw8c.execute-api.ap-southeast-2.amazonaws.com/";
        var DATA = {
           name: document.getElementById("contact-name").value,
           email: document.getElementById("contact-email").value,
@@ -46,7 +47,6 @@ function contact_form(e) {
 		"Access-Control-Origin": "*"
 	};
 
-console.log(DATA);
 	fetch(URL, {
 	    method: "POST",
 	    headers: HEADERS,
