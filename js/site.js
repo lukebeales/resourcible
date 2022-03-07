@@ -45,20 +45,15 @@ function contact_form(token) {
 		"Access-Control-Origin": "*"
 	};
 
-console.log(DATA);
-
-/*
 	fetch(URL, {
 		method: "POST",
 		headers: HEADERS,
 		body: JSON.stringify(DATA)
 	})
 	.then(function(response) {
-		console.log(response);
+		alert(response);
 	})
 	.then(function(data) {
-		// i think this is a failure
-		console.log(data)
+		alert('oh no');
 	});
-*/
 }
