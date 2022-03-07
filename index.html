@@ -30,12 +30,16 @@
 
 		<!-- Scripts
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+		<script src="https://www.google.com/recaptcha/enterprise.js?render=6LfF96gUAAAAAEt0iFm6sRVlHtl8bTRReURFhrOl"></script>
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="js/site.js"></script>
 
 		<!-- Favicon
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="icon" type="image/png" href="../../dist/images/favicon.png">
+
 
 	</head>
 	<body class="has-docked-nav">
@@ -239,25 +243,25 @@
 		<div class="section contact">
 			<div class="container">
 				<h2 class="section-heading">Register your interest</h2>
-				<form method="POST">
+				<form method="POST" id="contact">
 					<div class="row">
 						<div class="six columns">
 							<label for="contact-name">Your name</label>
-							<input class="u-full-width" type="text" id="contact-name">
+							<input class="u-full-width" type="text" id="contact-name" required="required">
 						</div>
 						<div class="six columns">
 							<label for="contact-email">Your email</label>
-							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="contact-email">
+							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="contact-email" required="required">
 						</div>
 					</div>
 					<label for="contact-reason">Reason for contacting</label>
-					<select class="u-full-width" id="contact-reason">
+					<select class="u-full-width" id="contact-reason" required="required">
 						<option>Just asking</option>
 						<option>ResourciBoard</option>
 					</select>
-					<label for="contact-message">Message</label>
+					<label for="contact-message">Message (optional)</label>
 					<textarea class="u-full-width" placeholder="Hi…" id="contact-message"></textarea>
-					<button class="button-primary" type="submit" onclick="contact_form(event)">Send</button>
+					<button class="button-primary g-recaptcha" data-sitekey="6LfF96gUAAAAAEt0iFm6sRVlHtl8bTRReURFhrOl" data-callback="contact_form" data-action="submit">Send</button>
 				</form>
 			</div>
 		</div>
