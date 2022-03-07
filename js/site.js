@@ -33,20 +33,24 @@ $(document).ready(function() {
 function contact_form() {
 	e.preventDefault();
 //g-recaptcha-response
-debugger;
+//debugger;
 
 	var URL = "https://qjn2mh8df7.execute-api.ap-southeast-2.amazonaws.com/";
 	var DATA = {
 		name: document.getElementById("contact-name").value,
 		email: document.getElementById("contact-email").value,
 		reason: document.getElementById("contact-reason").value,
-		message: document.getElementById("contact-message").value
+		message: document.getElementById("contact-message").value,
+		g-recaptcha-response: document.getElementById("g-recaptcha-response").value
 	};
 	var HEADERS = {
 		"Content-Type": "application/json",
 		"Access-Control-Origin": "*"
 	};
 
+console.log(DATA);
+
+/*
 	fetch(URL, {
 		method: "POST",
 		headers: HEADERS,
@@ -59,4 +63,5 @@ debugger;
 		// i think this is a failure
 		console.log(data)
 	});
+*/
 }
