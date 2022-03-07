@@ -30,9 +30,10 @@ $(document).ready(function() {
 
 
 
-function contact_form(token) {
-	// e.preventDefault();
+function contact_form() {
+	e.preventDefault();
 //g-recaptcha-response
+debugger;
 
 	var URL = "https://qjn2mh8df7.execute-api.ap-southeast-2.amazonaws.com/";
 	var DATA = {
