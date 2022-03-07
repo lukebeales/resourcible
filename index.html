@@ -243,7 +243,7 @@
 		<div class="section contact">
 			<div class="container">
 				<h2 class="section-heading">Register your interest</h2>
-				<form onsubmit="contact_form(e);">
+				<form>
 					<div class="row">
 						<div class="six columns">
 							<label for="contact-name">Your name</label>
@@ -263,7 +263,7 @@
 					<textarea class="u-full-width" placeholder="Hi…" id="contact-message"></textarea>
 
 					<!-- initially disabled for recaptcha loading -->
-					<button disabled="disabled" class="button-primary g-recaptcha" data-sitekey="6LfF96gUAAAAAEt0iFm6sRVlHtl8bTRReURFhrOl" data-callback="onSubmit" data-action="submit">Send</button>
+					<button disabled="disabled" class="button-primary g-recaptcha" data-sitekey="6LfF96gUAAAAAEt0iFm6sRVlHtl8bTRReURFhrOl" data-callback="contact_form" data-action="contact">Send</button>
 				</form>
 			</div>
 		</div>

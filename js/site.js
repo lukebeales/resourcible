@@ -29,14 +29,8 @@ $(document).ready(function() {
 });
 
 
-function onSubmit(token) {
-	document.getElementById("contact").submit();
-}
-
-function contact_form(e) {
-	e.preventDefault();
-//g-recaptcha-response
-//debugger;
+function contact_form(token) {
+	//e.preventDefault();
 
 	var URL = "https://qjn2mh8df7.execute-api.ap-southeast-2.amazonaws.com/";
 	var DATA = {
@@ -44,7 +38,7 @@ function contact_form(e) {
 		email: document.getElementById("contact-email").value,
 		reason: document.getElementById("contact-reason").value,
 		message: document.getElementById("contact-message").value,
-		"g-recaptcha-response": document.getElementById("g-recaptcha-response").value
+		recaptcha: token
 	};
 	var HEADERS = {
 		"Content-Type": "application/json",
