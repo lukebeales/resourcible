@@ -29,8 +29,11 @@ $(document).ready(function() {
 });
 
 
+function onSubmit(token) {
+	document.getElementById("contact").submit();
+}
 
-function contact_form() {
+function contact_form(e) {
 	e.preventDefault();
 //g-recaptcha-response
 //debugger;
