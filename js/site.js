@@ -41,7 +41,7 @@ function contact_form() {
 		email: document.getElementById("contact-email").value,
 		reason: document.getElementById("contact-reason").value,
 		message: document.getElementById("contact-message").value,
-		g-recaptcha-response: document.getElementById("g-recaptcha-response").value
+		"g-recaptcha-response": document.getElementById("g-recaptcha-response").value
 	};
 	var HEADERS = {
 		"Content-Type": "application/json",
