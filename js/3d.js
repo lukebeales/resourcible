@@ -6,6 +6,8 @@ import { Rhino3dmLoader } from 'https://cdn.skypack.dev/three@v0.132.2/examples/
 
 // import { GUI } from 'https://cdn.skypack.dev/three@v0.132.2/examples/jsm/libs/dat.gui.module.js';
 
+let MODEL = '../media/resourciboard.3dm';
+
 let camera, scene, renderer, controls;
 
 init_3d();
@@ -45,7 +47,7 @@ function init_3d() {
 
 	const loader = new Rhino3dmLoader();
 	loader.setLibraryPath( 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/' );
-	loader.load( 'media/resourciboard.3dm', function ( object ) {
+	loader.load(MODEL, function ( object ) {
 
 		scene.add( object );
 

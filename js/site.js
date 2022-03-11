@@ -27,33 +27,3 @@ $(document).ready(function() {
 	init();
 
 });
-
-
-function contact_form(token) {
-	//e.preventDefault();
-
-	var URL = "https://qjn2mh8df7.execute-api.ap-southeast-2.amazonaws.com/";
-	var DATA = {
-		name: document.getElementById("contact-name").value,
-		email: document.getElementById("contact-email").value,
-		reason: document.getElementById("contact-reason").value,
-		message: document.getElementById("contact-message").value,
-		recaptcha: token
-	};
-	var HEADERS = {
-		"Content-Type": "application/json",
-		"Access-Control-Origin": "*"
-	};
-
-	fetch(URL, {
-		method: "POST",
-		headers: HEADERS,
-		body: JSON.stringify(DATA)
-	})
-	.then(function(response) {
-		alert(response);
-	})
-	.then(function(data) {
-		alert('oh no');
-	});
-}

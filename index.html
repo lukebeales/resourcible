@@ -35,6 +35,7 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="js/site.js"></script>
+		<script src="js/contact.js"></script>
 
 		<!-- Favicon
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -243,28 +244,7 @@
 		<div class="section contact">
 			<div class="container">
 				<h2 class="section-heading">Register your interest</h2>
-				<form>
-					<div class="row">
-						<div class="six columns">
-							<label for="contact-name">Your name</label>
-							<input class="u-full-width" type="text" id="contact-name" required="required">
-						</div>
-						<div class="six columns">
-							<label for="contact-email">Your email</label>
-							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="contact-email" required="required">
-						</div>
-					</div>
-					<label for="contact-reason">Reason for contacting</label>
-					<select class="u-full-width" id="contact-reason" required="required">
-						<option>Just asking</option>
-						<option>ResourciBoard</option>
-					</select>
-					<label for="contact-message">Message (optional)</label>
-					<textarea class="u-full-width" placeholder="Hi…" id="contact-message"></textarea>
-
-					<!-- initially disabled for recaptcha loading -->
-					<button disabled="disabled" class="button-primary g-recaptcha" data-sitekey="6LfF96gUAAAAAEt0iFm6sRVlHtl8bTRReURFhrOl" data-callback="contact_form" data-action="contact">Send</button>
-				</form>
+				<div id="contact-form"></div>
 			</div>
 		</div>
 
