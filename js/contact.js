@@ -1,6 +1,6 @@
-$(document).ready(function() {
-	contact_form_init();
-});
+// this can't wait for an onload because it uses google's recaptcha
+// so the button needs to be there.
+contact_form_init();
 
 function contact_form_init() {
 	document.getElementById('contact-form').innerHTML = `
