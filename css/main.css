@@ -113,11 +113,6 @@
   color: #fff;
 }
 
-.footer {
-  background-color: #444;
-  color: #ccc;
-}
-
 
 /* Bigger than 550 */
 @media (min-width: 550px) {

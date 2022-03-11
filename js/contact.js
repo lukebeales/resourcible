@@ -3,7 +3,8 @@
 contact_form_init();
 
 function contact_form_init() {
-	document.getElementById('contact-form').innerHTML = `
+	document.getElementById('common-contact').innerHTML = `
+		<h3 class="section-heading">Register your interest</h3>
 		<form>
 			<div class="row">
 				<div class="six columns">
@@ -26,6 +27,8 @@ function contact_form_init() {
 			<!-- initially disabled for recaptcha loading -->
 			<button disabled="disabled" class="button-primary g-recaptcha" data-sitekey="6LfF96gUAAAAAEt0iFm6sRVlHtl8bTRReURFhrOl" data-callback="contact_form_send" data-action="contact">Send</button>
 		</form>
+		<style>
+		</style>
 	`;
 }
 
