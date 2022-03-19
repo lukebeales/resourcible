@@ -29,6 +29,7 @@
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3/dist/css/splide.min.css">
 		<link rel="stylesheet" href="../css/resourciboard.css">
 		<link rel="stylesheet" href="../css/nav.css">
 
@@ -46,31 +47,8 @@
 				<ul class="navbar-list">
 					<li class="navbar-item"><a class="navbar-link navbar-logo" href="#">ResourciBoard</a></li>
 					<li class="navbar-item"><a class="navbar-link" href="#design">Design</a></li>
-					<li class="navbar-item">
-						<a class="navbar-link" href="#" data-popover="#usesNavPopover">Uses</a>
-						<div id="usesNavPopover" class="popover">
-							<ul class="popover-list">
-								<li class="popover-item">
-									<a class="popover-link" href="#uses-camera">Camera</a>
-								</li>
-								<li class="popover-item">
-									<a class="popover-link" href="#uses-shift">Shift</a>
-								</li>
-								<li class="popover-item">
-									<a class="popover-link" href="#uses-gps">GPS</a>
-								</li>
-								<li class="popover-item">
-									<a class="popover-link" href="#uses-sensor">Sensor</a>
-								</li>
-								<li class="popover-item">
-									<a class="popover-link" href="#uses-oled">OLED</a>
-								</li>
-								<li class="popover-item">
-									<a class="popover-link" href="#uses-pager">Pager</a>
-								</li>
-							</ul>
-						</div>
-					</li>
+					<li class="navbar-item"><a class="navbar-link" href="#uses">Uses</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#power">Power</a></li>
 					<li class="navbar-item"><a class="navbar-link" href="#specifications">Specifications</a></li>
 					<li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
 				</ul>
@@ -114,88 +92,110 @@
 			</div>
 		</div>
 
-		<a name="uses-camera"></a>
-		<div class="section camera">
+		<a name="uses"></a>
+		<div class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<div class="section camera">
+							<div class="container">
+								<div class="row">
+									<div class="one-half column">&nbsp;</div>
+									<div class="one-half column">
+										<h3 class="section-heading">Indoor/Outdoor webcam</h3>
+										<p class="section-description">Weather resistant, self uploading, change detection</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="section shift">
+							<div class="container">
+								<div class="row">
+									<div class="one-half column">&nbsp;</div>
+									<div class="one-half column">
+										<h3 class="section-heading">Shift Outputs</h3>
+										<p class="section-description">Stackable, low power signals, high current sink, light grids/matrix, text displays, lighting sequences</p>
+										<a class="button button-primary" href="https://lukebeales.com/articles/giant-alphanumeric-display/" target="_blank">Giant Alphanumeric Display</a>
+										<a class="button button-primary" href="https://lukebeales.com/articles/neon-style-led-sign/" target="_blank">Neon style sign</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="section gps">
+							<div class="container">
+								<div class="row">
+									<div class="one-half column">
+										<h3 class="section-heading">Tracking with GPS</h3>
+										<p class="section-description">Rechargeable, water resistant, as little as each minute</p>
+										<p class="section-description">a map can go in here somewhere which is where Payal comes in!</p>
+									</div>
+									<div class="one-half column">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="section sensor">
+							<div class="container">
+								<div class="row">
+									<div class="one-half column">&nbsp;</div>
+									<div class="one-half column">
+										<h3 class="section-heading">Sense everything</h3>
+										<p class="section-description">Status indicator, temperature, light, doors/gates, movement.  Kit form</p>
+										<p class="section-description">Trigger when a door is opened/closed, or when an object is moved.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="section oled">
+							<div class="container">
+								<div class="row">
+									<div class="one-half column">
+										<h3 class="section-heading">Oled / I2C</h3>
+										<p class="section-description">Demonstrating the ability to communicate with I2C peripherals.	Oled status display.  Kit form</p>
+									</div>
+									<div class="one-half column">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="section pager">
+							<div class="container">
+								<div class="row">
+									<div class="one-half column">&nbsp;</div>
+									<div class="one-half column">
+										<h3 class="section-heading">Pager</h3>
+										<p class="section-description">Ideal for queue/ticketing applications.</p>
+										<p class="section-description">This is where another app can happen, where it just turns entries on or off</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<a name="power"></a>
+		<div class="section power">
 			<div class="container">
 				<div class="row">
 					<div class="one-half column">&nbsp;</div>
 					<div class="one-half column">
-						<h3 class="section-heading">Indoor/Outdoor webcam</h3>
-						<p class="section-description">Weather resistant, self uploading, change detection</p>
+						<h3 class="section-heading">Power</h3>
+						<p class="section-description">Designed to demonstrate the portability and charge capabilities of the ResourciBoard.  With a LI-ION 10440 battery, and the screw terminals underneath, the enclosure can stay completely weather-sealed while recharging when returned to a charging base.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<a name="uses-shift"></a>
-		<div class="section shift">
-			<div class="container">
-				<div class="row">
-					<div class="one-half column">&nbsp;</div>
-					<div class="one-half column">
-						<h3 class="section-heading">Shift Outputs</h3>
-						<p class="section-description">Stackable, low power signals, high current sink, light grids/matrix, text displays, lighting sequences</p>
-						<a class="button button-primary" href="https://lukebeales.com/articles/giant-alphanumeric-display/" target="_blank">Giant Alphanumeric Display</a>
-						<a class="button button-primary" href="https://lukebeales.com/articles/neon-style-led-sign/" target="_blank">Neon style sign</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<a name="uses-gps"></a>
-		<div class="section gps">
-			<div class="container">
-				<div class="row">
-					<div class="one-half column">
-						<h3 class="section-heading">Tracking with GPS</h3>
-						<p class="section-description">Rechargeable, water resistant, as little as each minute</p>
-						<p class="section-description">a map can go in here somewhere which is where Payal comes in!</p>
-					</div>
-					<div class="one-half column">&nbsp;</div>
-				</div>
-			</div>
-		</div>
-
-		<a name="uses-sensor"></a>
-		<div class="section sensor">
-			<div class="container">
-				<div class="row">
-					<div class="one-half column">&nbsp;</div>
-					<div class="one-half column">
-						<h3 class="section-heading">Sense everything</h3>
-						<p class="section-description">Status indicator, temperature, light, doors/gates, movement.  Kit form</p>
-						<p class="section-description">Trigger when a door is opened/closed, or when an object is moved.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<a name="uses-oled"></a>
-		<div class="section oled">
-			<div class="container">
-				<div class="row">
-					<div class="one-half column">
-						<h3 class="section-heading">Oled / I2C</h3>
-						<p class="section-description">Demonstrating the ability to communicate with I2C peripherals.	Oled status display.  Kit form</p>
-					</div>
-					<div class="one-half column">&nbsp;</div>
-				</div>
-			</div>
-		</div>
-
-		<a name="uses-pager"></a>
-		<div class="section pager">
-			<div class="container">
-				<div class="row">
-					<div class="one-half column">&nbsp;</div>
-					<div class="one-half column">
-						<h3 class="section-heading">Pager</h3>
-						<p class="section-description">Ideal for queue/ticketing applications.  Designed to demonstrate the portability and charge capabilities of the ResourciBoard.  With a LI-ION 10440 battery, and the screw terminals underneath, the enclosure can stay completely weather-sealed while recharging when returned to a charging base.</p>
-						<p class="section-description">This is where another app can happen, where it just turns entries on or off</p>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<a name="specifications"></a>
 		<div class="section specifications">
@@ -252,6 +252,7 @@
 		<!-- Scripts
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3/dist/js/splide.min.js"></script>
 		<script type="module" src="../js/3d.js"></script>
 		<script src="../js/site.js"></script>
 		<script src="../js/contact.js"></script>

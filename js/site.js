@@ -1,7 +1,7 @@
-$(document).ready(function() {
+//$(document).ready(function() {
+document.addEventListener( 'DOMContentLoaded', function() {
 	// Variables
-	var $codeSnippets = $('.code-example-body'),
-		$body = $('body'),
+	var 	$body = $('body'),
 		$popoverLink = $('[data-popover]'),
 		$document = $(document);
 
@@ -26,4 +26,11 @@ $(document).ready(function() {
 
 	init();
 
+
+	// this is the carousel/slider
+	var splide = new Splide( '.splide' );
+	splide.mount();
+
 });
+
+
