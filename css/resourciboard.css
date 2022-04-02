@@ -24,6 +24,10 @@
 }
 
 
+.slide {
+	min-height: 512px;
+}
+
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .phones {
@@ -130,6 +134,7 @@
   background-size: cover;
   background-position: 50% 50%;
   background-color: #000;
+  background-attachment: fixed;
   color: #fff;
 }
 

@@ -11,7 +11,7 @@ function footer_init() {
 				something in here
 			</div>
 			<div class="one-third column">
-				<i class="fa-brands fa-linkedin"></i>
+				<i class="fa-brands fa-linkedin fa-xl"></i>
 			</div>
 		</div>
 		<style>
