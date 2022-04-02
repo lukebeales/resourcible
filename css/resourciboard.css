@@ -42,6 +42,13 @@
   display: none;
 }
 
+#3d_stage {
+	position: relative;
+	width: 100%;
+	max-width: 512px;
+	height: auto;
+}
+
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
@@ -154,6 +161,10 @@
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
+  #3d_stage {
+	top: -160px;
+  }
+
   .section {
     padding: 12rem 0 11rem;
   }
