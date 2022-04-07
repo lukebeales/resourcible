@@ -98,6 +98,7 @@
   position: relative;
   border-radius: 6px;
   box-sizing: border-box;
+  color: #000000;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
