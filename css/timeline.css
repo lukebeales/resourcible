@@ -11,7 +11,7 @@
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
+  width: 3px;
   background-color: white;
   top: 0;
   bottom: 0;
@@ -33,11 +33,10 @@
 .timeline-container::after {
   content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
+  width: 19px;
+  height: 19px;
+  right: -8px;
   background-color: white;
-  border: 4px solid #FF9F55;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -88,7 +87,7 @@
 
 /* Fix the circle for containers on the right side */
 .timeline-container-right::after {
-  left: -16px;
+  left: -11px;
   box-sizing: border-box;
 }
 
@@ -126,7 +125,7 @@
 
 /* Make sure all circles are at the same spot */
   .timeline-container-left::after, .timeline-container-right::after {
-    left: 15px;
+    left: 18px;
   }
 
 /* Make all right containers behave like the left ones */
