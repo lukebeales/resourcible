@@ -2,6 +2,15 @@
 	font-style: normal !important;
 }
 
+
+.dot {
+	width: 10px;
+	height: 10px;
+	background-color: #0000FF;
+	position: relative;
+}
+
+
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
