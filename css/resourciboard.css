@@ -154,7 +154,7 @@
 .power {
   background-color: #000000;
   color: #FFFFFF;
-  padding: 8rem 0 8rem;
+  padding: 8rem 0 8rem !important;
 }
 
 .specifications {
