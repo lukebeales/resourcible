@@ -61,8 +61,8 @@
 
 #3d_stage {
 	position: relative;
-	width: 100%;
-	max-width: 512px;
+	max-width: 100%;
+	width: 512px;
 	height: auto;
 }
 
