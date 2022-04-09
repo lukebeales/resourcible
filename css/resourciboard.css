@@ -4,10 +4,11 @@
 
 
 .dot {
-	width: 10px;
-	height: 10px;
-	background-color: #0000FF;
-	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: #5555FF;
+	position: absolute;
+	border-radius: 50% 50%;
 }
 
 
