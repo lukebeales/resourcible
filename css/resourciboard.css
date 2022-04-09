@@ -136,6 +136,11 @@
   color: #fff;
 }
 
+.power {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
 .specifications {
   background-image: url('../media/boards.jpg');
   background-size: cover;
