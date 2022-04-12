@@ -1,0 +1,14 @@
+.dot {
+        width: 20px;
+        height: 20px;
+        background-color: #5555FF;
+        position: absolute;
+        border-radius: 50% 50%;
+        cursor: pointer;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+}
+
+.dit::after {
+	content: "+";
+}
