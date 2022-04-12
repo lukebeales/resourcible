@@ -5,10 +5,36 @@
         position: absolute;
         border-radius: 50% 50%;
         cursor: pointer;
-        border: 5px solid rgba(255, 255, 255, 0.5);
+        border-width: 0.00em;
+	border-style: solid;
+        border-color: rgba(255, 255, 255, 0.0);
 	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+
+	animation-name: dot;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
 }
 
-.dit::after {
+
+.dot::after {
 	content: "+";
+}
+
+
+@keyframes dot {
+  from {
+	border-width: 0.25em;
+        border-color: rgba(255, 255, 255, 0.5);
+  }
+  to {
+	background-color: 0.00em;
+        border-color: rgba(255, 255, 255, 0.0);
+  }
 }
