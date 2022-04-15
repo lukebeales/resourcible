@@ -27,14 +27,26 @@
 	content: "+";
 }
 
-
 @keyframes dot {
-  from {
-	border-width: 0.25em;
-        border-color: rgba(255, 255, 255, 0.5);
-  }
-  to {
-	background-color: 0.00em;
-        border-color: rgba(255, 255, 255, 0.0);
-  }
+	from {
+		border-width: 0.25em;
+	        border-color: rgba(255, 255, 255, 0.5);
+	}
+	to {
+		background-color: 0.00em;
+	        border-color: rgba(255, 255, 255, 0.0);
+	}
 }
+
+
+/* tooltips, found here: https://stackoverflow.com/a/25813336/3417896 */
+[data-tooltip]:before {            
+	position: absolute;
+	content: attr(data-tooltip);
+	opacity: 0;
+}
+
+[data-tooltip]:hover:before {        
+	opacity : 1;
+}
+
