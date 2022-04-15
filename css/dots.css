@@ -50,10 +50,13 @@
 	padding: 10px;
 	box-shadow: 0px 0px 20px rgb(0 0 0 / 75%);
 	font-size: 0.75em;
-	min-width: 100px;
+	width: 20px;
+	height: 20px;
 }
 
 [data-tooltip]:hover:before {        
 	opacity : 1;
+	width: 100px;
+	height: unset;
 }
 
