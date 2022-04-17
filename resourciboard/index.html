@@ -29,8 +29,8 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3/dist/css/splide.min.css">
 		<link rel="stylesheet" href="../css/resourciboard.css">
 		<link rel="stylesheet" href="../css/nav.css">
-		<link rel="stylesheet" href="../css/timeline.css">
-		<link rel="stylesheet" href="../css/dots.css">
+		<link rel="stylesheet" href="../css/_timeline.css">
+		<link rel="stylesheet" href="../css/_dots.css">
 
 		<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="icon" type="image/png" href="../../dist/images/favicon.png">
@@ -44,7 +44,7 @@
 			<div class="container">
 				<ul class="navbar-list">
 					<li class="navbar-item"><a class="navbar-link navbar-logo" href="#">ResourciBoard</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#design">Design</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#timeline">Timeline</a></li>
 					<li class="navbar-item"><a class="navbar-link" href="#uses">Uses</a></li>
 					<li class="navbar-item"><a class="navbar-link" href="#explore">Explore</a></li>
 					<li class="navbar-item"><a class="navbar-link" href="#specifications">Specifications</a></li>
@@ -68,78 +68,78 @@
 		</div>
 
 
-		<a name="design"></a>
-		<div class="section design">
+		<a name="timeline"></a>
+		<div class="section timeline">
 			<div class="container">
-				<h3 class="section-heading">Design</h3>
-				<p class="section-description">Payal wasn't a huge fan of this bit, so I think it would be best served as a timeline.</p>
-				<div class="timeline">
-					<div class="timeline-container timeline-container-left">
-						<div class="timeline-container-content">
+				<h3 class="section-heading">Timeline</h3>
+				<p class="section-description">Here's how the resourciboard came about.</p>
+				<div class="_timeline">
+					<div class="_timeline-container _timeline-container-left">
+						<div class="_timeline-container-content">
 							<h2>Digital Signage</h2>
 							<p>Researched a low cost, replaceable linux device for a new digital signage platform, based off a Raspberry Pi.  The Raspberry Pi was only new at the time and didn't have the software required, so other hardware was used instead.</p>
 							<img src="../media/signchro.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/products/signchro" target="_blank">Signchro</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-right">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-right">
+						<div class="_timeline-container-content">
 							<h2>Network monitoring tool</h2>
 							<p>Changed to Arduino based, restricted it to non-display and relay control, proved web connectivity via ethernet board, expanded with a few more sensors and a web based configurator, and finalised an enclosure.  Initial pcb design and fabrication, and assembly testing.</p>
 							<img src="../media/elbeano.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/articles/elbeano-web-controlled-arduino-diagnostics-device/" target="_blank">Discover Elbeano</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-left">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-left">
+						<div class="_timeline-container-content">
 							<h2>ESP32-cam power cycle timer</h2>
 							<p>Based off a 555 chip with a few discrete components, using leftover enclosures from initial project.</p>
 							<img src="../media/birds.gif" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/articles/arduino-attiny85-board/" target="_blank">Read about it</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-right">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-right">
+						<div class="_timeline-container-content">
 							<h2>Timer board changed to ATTiny85</h2>
 							<p>Allow for more accurate timings, added wifi connectivity via ESP12F to send sensor data without the ESP32-Cam, created cloud app to send and receive data, initial pcb layout</p>
 							<img src="../media/attiny85_board.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard/" target="_blank">See the technical bits</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-left">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-left">
+						<div class="_timeline-container-content">
 							<h2>ATTiny85 expanded</h2>
 							<p>Added bios-like functionality, added dedicated app chips, power finalisation, pcb finalisation and initial print</p>
 							<img src="../media/pcb_render.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-2/" target="_blank">Working it all out</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-right">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-right">
+						<div class="_timeline-container-content">
 							<h2>Sub board theory, prototype</h2>
 							<p>Added the idea of making this board and its power options the base for sub boards to give it much more capability.</p>
 							<img src="../media/prototype.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-3/" target="_blank">Prototype</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-left">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-left">
+						<div class="_timeline-container-content">
 							<h2>Sub boards</h2>
 							<p>Designed a number of sub boards for dedicated applications for the launch</p>
 							<img src="../media/sub-boards.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-4/" target="_blank">Sub boards</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-right">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-right">
+						<div class="_timeline-container-content">
 							<h2>Mass production</h2>
 							<p>Assembly order and component testing, to get costs and stability</p>
 							<img src="../media/mass-production.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
 							<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-5/" target="_blank">Mass production</a>
 						</div>
 					</div>
-					<div class="timeline-container timeline-container-left">
-						<div class="timeline-container-content">
+					<div class="_timeline-container _timeline-container-left">
+						<div class="_timeline-container-content">
 							<h2>SaaS, application firmware</h2>
 							<p>With the device proven and costs worked out, fixed up a few issues within the firmware and got the SaaS working nicer</p>
 							<img src="../media/products.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
@@ -252,18 +252,18 @@
 				<p class="section-description">&nbsp;</p>
 				<div style="position: relative;">
 					<img src="../media/resourciboard-angled-outlined.png" style="max-width: 100%; opacity: 0.5;" />
-					<div class="dot" style="left: 8%; top: 48%;" data-tooltip="Boost Board to bring any AAA battery up to 5v"></div>
-					<div class="dot" style="left: 25%; top: 25%;" data-tooltip="Super Capacitor to allow standard batteries to cover the large current of WiFi"></div>
-					<div class="dot" style="left: 66%; top: 19%;" data-tooltip="LDO regulator to supply the WiFi, for the maximum time on battery alone"></div>
-					<div class="dot" style="left: 82%; top: 34%;" data-tooltip="DC Jack for external plugpacks, batteries, USB source"></div>
-					<div class="dot" style="left: 45%; top: 69%;" data-tooltip="Diode to allow the cpu to run at 4.4v, making it compatible with both 3.3v WiFi and 5v chips"></div>
-					<div class="dot" style="left: 32%; top: 74%;" data-tooltip="Jumpers to set how to make the source voltage suitable for the cpu"></div>
-					<div class="dot" style="left: 48%; top: 48%;" data-tooltip="Battery clip for AAA/10440 and mounting hole + and - terminals"></div>
-					<div class="dot" style="left: 51%; top: 28%;" data-tooltip="Tantalum capacitors to cover the huge current spikes of WiFi"></div>
-					<div class="dot" style="left: 34%; top: 1%;" data-tooltip="Linear Regulator to allow for high current applications"></div>
-					<div class="dot" style="left: 7%; top: 13%;" data-tooltip="MOSFET to reduce idle power and switch external circuits"></div>
-					<div class="dot" style="left: 60%; top: 60%;" data-tooltip="WiFi provided by ESP12F"></div>
-					<div class="dot" style="left: 35%; top: 35%;" data-tooltip="Swappable BIOS and APP chips to expand functionality"></div>
+					<div class="_dot" style="left: 8%; top: 48%;" data-tooltip="Boost Board to bring any AAA battery up to 5v"></div>
+					<div class="_dot" style="left: 25%; top: 25%;" data-tooltip="Super Capacitor to allow standard batteries to cover the large current of WiFi"></div>
+					<div class="_dot" style="left: 66%; top: 19%;" data-tooltip="LDO regulator to supply the WiFi, for the maximum time on battery alone"></div>
+					<div class="_dot" style="left: 82%; top: 34%;" data-tooltip="DC Jack for external plugpacks, batteries, USB source"></div>
+					<div class="_dot" style="left: 45%; top: 69%;" data-tooltip="Diode to allow the cpu to run at 4.4v, making it compatible with both 3.3v WiFi and 5v chips"></div>
+					<div class="_dot" style="left: 32%; top: 74%;" data-tooltip="Jumpers to set how to make the source voltage suitable for the cpu"></div>
+					<div class="_dot" style="left: 48%; top: 48%;" data-tooltip="Battery clip for AAA/10440 and mounting hole + and - terminals"></div>
+					<div class="_dot" style="left: 51%; top: 28%;" data-tooltip="Tantalum capacitors to cover the huge current spikes of WiFi"></div>
+					<div class="_dot" style="left: 34%; top: 1%;" data-tooltip="Linear Regulator to allow for high current applications"></div>
+					<div class="_dot" style="left: 7%; top: 13%;" data-tooltip="MOSFET to reduce idle power and switch external circuits"></div>
+					<div class="_dot" style="left: 60%; top: 60%;" data-tooltip="WiFi provided by ESP12F"></div>
+					<div class="_dot" style="left: 35%; top: 35%;" data-tooltip="Swappable BIOS and APP chips to expand functionality"></div>
 				</div>
 			</div>
 		</div>

@@ -1,4 +1,4 @@
-.dot {
+._dot {
         width: 20px;
         height: 20px;
         background-color: #5555FF;
@@ -14,7 +14,7 @@
 	justify-content: center;
 	font-weight: bold;
 
-	animation-name: dot;
+	animation-name: _dot;
 	animation-duration: 1s;
 	animation-delay: 1s;
 	animation-timing-function: ease-out;
@@ -23,11 +23,11 @@
 }
 
 
-.dot::after {
+._dot::after {
 	content: "+";
 }
 
-@keyframes dot {
+@keyframes _dot {
 	from {
 		border-width: 0.25em;
 	        border-color: rgba(255, 255, 255, 0.5);
