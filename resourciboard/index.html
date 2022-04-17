@@ -250,39 +250,21 @@
 			<div class="container">
 				<h3 class="section-heading">Explore key features</h3>
 				<p class="section-description">&nbsp;</p>
-				<div class="row">
-					<div class="two-thirds column" style="position: relative;">
-						<img src="../media/resourciboard-angled-outlined.png" style="max-width: 100%; opacity: 0.5;" />
-						<div class="dot" style="left: 8%; top: 48%;" data-tooltip="Boost Board to bring any AAA battery up to 5v"></div>
-						<div class="dot" style="left: 25%; top: 25%;" data-tooltip="Super Capacitor to allow standard batteries to cover the large current of WiFi"></div>
-						<div class="dot" style="left: 66%; top: 19%;" data-tooltip="LDO regulator to supply the WiFi, for the maximum time on battery alone"></div>
-						<div class="dot" style="left: 82%; top: 34%;" data-tooltip="DC Jack for external plugpacks, batteries, USB source"></div>
-						<div class="dot" style="left: 45%; top: 69%;" data-tooltip="Diode to allow the cpu to run at 4.4v, making it compatible with both 3.3v WiFi and 5v chips"></div>
-						<div class="dot" style="left: 32%; top: 74%;" data-tooltip="Jumpers to set how to make the source voltage suitable for the cpu"></div>
-						<div class="dot" style="left: 48%; top: 48%;" data-tooltip="Battery clip for AAA/10440 and mounting hole + and - terminals"></div>
-						<div class="dot" style="left: 51%; top: 28%;" data-tooltip="Tantalum capacitors to cover the huge current spikes of WiFi"></div>
-						<div class="dot" style="left: 34%; top: 1%;" data-tooltip="Linear Regulator to allow for high current applications"></div>
-						<div class="dot" style="left: 7%; top: 13%;" data-tooltip="MOSFET to reduce idle power and switch external circuits"></div>
-						<div class="dot" style="left: 60%; top: 60%;" data-tooltip="WiFi provided by ESP12F"></div>
-						<div class="dot" style="left: 35%; top: 35%;" data-tooltip="Swappable BIOS and APP chips to expand functionality"></div>
-					</div>
-					<div class="one-third column">
-						<p class="section-description">6.5v+ DC¹</p>
-						<p class="section-description">5v+ DC²</p>
-						<p class="section-description">USB to DC</p>
-						<p class="section-description"><4.5v DC³</p>
-						<p class="section-description">LI-ION 10440⁴, rechargeable⁵</p>
-						<p class="section-description">AAA⁶</p>
-
-					</div>
+				<div style="position: relative;">
+					<img src="../media/resourciboard-angled-outlined.png" style="max-width: 100%; opacity: 0.5;" />
+					<div class="dot" style="left: 8%; top: 48%;" data-tooltip="Boost Board to bring any AAA battery up to 5v"></div>
+					<div class="dot" style="left: 25%; top: 25%;" data-tooltip="Super Capacitor to allow standard batteries to cover the large current of WiFi"></div>
+					<div class="dot" style="left: 66%; top: 19%;" data-tooltip="LDO regulator to supply the WiFi, for the maximum time on battery alone"></div>
+					<div class="dot" style="left: 82%; top: 34%;" data-tooltip="DC Jack for external plugpacks, batteries, USB source"></div>
+					<div class="dot" style="left: 45%; top: 69%;" data-tooltip="Diode to allow the cpu to run at 4.4v, making it compatible with both 3.3v WiFi and 5v chips"></div>
+					<div class="dot" style="left: 32%; top: 74%;" data-tooltip="Jumpers to set how to make the source voltage suitable for the cpu"></div>
+					<div class="dot" style="left: 48%; top: 48%;" data-tooltip="Battery clip for AAA/10440 and mounting hole + and - terminals"></div>
+					<div class="dot" style="left: 51%; top: 28%;" data-tooltip="Tantalum capacitors to cover the huge current spikes of WiFi"></div>
+					<div class="dot" style="left: 34%; top: 1%;" data-tooltip="Linear Regulator to allow for high current applications"></div>
+					<div class="dot" style="left: 7%; top: 13%;" data-tooltip="MOSFET to reduce idle power and switch external circuits"></div>
+					<div class="dot" style="left: 60%; top: 60%;" data-tooltip="WiFi provided by ESP12F"></div>
+					<div class="dot" style="left: 35%; top: 35%;" data-tooltip="Swappable BIOS and APP chips to expand functionality"></div>
 				</div>
-				<p class="section-description">&nbsp;</p>
-				<p class="section-terms">¹input voltage limit dependent on heat dispersion available</p>
-				<p class="section-terms">²3.3v operation only</p>
-				<p class="section-terms">³current limited due to requirement of boost</p>
-				<p class="section-terms">⁴boosted, or no boost for extra low power operation (no recharge available)</p>
-				<p class="section-terms">⁵requires dedicated li-ion charging board</p>
-				<p class="section-terms">⁶depending on battery brand, longer delays between updates required, long initial recharge period</p>
 			</div>
 		</div>
 
@@ -318,17 +300,26 @@
 						</ul>
 						<h3 class="section-heading">Power sources</h3>
 						<ul style="text-align: left; display: inline-block;">
-							<li>AAA Alkaline 1.5v</li>
-							<li>AAA LI-ION 1.5v</li>
-							<li>10440 LI-ION 3.7v Rechargeable</li>
-							<li>3.3v regulated</li>
-							<li>5v regulated</li>
-							<li>>4.5v unregulated</li>
+							<li>6.5v+ DC¹</li>
+							<li>5v+ DC²</li>
+							<li>USB to DC</li>
+							<li><4.5v DC³</li>
+							<li>LI-ION 10440⁴, rechargeable⁵</li>
+							<li>AAA⁶</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			IO pins and their abilities overlap with eachother limiting the amount of peripherals.  Only one power source can be provided at one time.  Battery type practicality is determined by the peripheral current requirements.
+			<p class="section-description">&nbsp;</p>
+			<p class="section-terms">¹input voltage limit dependent on heat dispersion available</p>
+			<p class="section-terms">²3.3v operation only</p>
+			<p class="section-terms">³current limited due to requirement of boost</p>
+			<p class="section-terms">⁴boosted, or no boost for extra low power operation (no recharge available)</p>
+			<p class="section-terms">⁵requires dedicated li-ion charging board</p>
+			<p class="section-terms">⁶depending on battery brand, longer delays between updates required, long initial recharge period</p>
+			<p class="section-terms">IO pins and their abilities overlap with eachother limiting the amount of peripherals</p>
+			<p class="section-terms">Only one power source can be provided at one time</p>
+			<p class="section-terms">Battery type practicality is determined by the peripheral current requirements</p>
 		</div>
 
 		<a name="contact"></a>
