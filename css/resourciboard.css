@@ -94,7 +94,8 @@
 }
 
 .timeline {
-  background-image: url('../media/blueprint.jpg');
+  /* background-image: url('../media/blueprint.jpg'); */
+  background-image: linear-gradient(#0050a8, #00b7ff);
   background-size: cover;
   background-position: 50% 50%;
   color: #fff;
