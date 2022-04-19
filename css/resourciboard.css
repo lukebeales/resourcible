@@ -101,27 +101,30 @@
   color: #fff;
 }
 
-.camera {
+.expand {
   background-image: url('../media/esp32.jpg');
   background-size: cover;
   background-position: 50% 50%;
   color: #fff;
 }
 
+/*
 .shift {
   background-image: url('../media/shift.jpg');
   background-size: cover;
   background-position: 50% 50%;
   color: #fff;
 }
+*/
 
-.oled {
+.contact {
   background-image: url('../media/oled.jpg');
   background-size: cover;
   background-position: 50% 50%;
   color: #fff;
 }
 
+/*
 .sensor {
   background-image: url('../media/sensor.jpg');
   background-size: cover;
@@ -142,6 +145,7 @@
   background-position: 50% 50%;
   color: #fff;
 }
+*/
 
 .explore {
   background-color: #000000;
