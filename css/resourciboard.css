@@ -11,10 +11,16 @@
 	font-style: normal !important;
 }
 
-.section {
+.section.padding, .column.padding {
   padding: 8rem 0 7rem;
   text-align: center;
 }
+
+.column.padding {
+	backdrop-filter: blur(3px);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
 
 .section-heading {
 	font-family: 'Amaranth', serif !important;
@@ -49,16 +55,30 @@
 	background-color: #000000;
 }
 
+.column_placeholder {
+	display: none;
+	width: 1px;
+	height: 1px;
+}
+
 /* Bigger than 550 */
 @media (min-width: 550px) {
-  .section {
+  .section.padding, .column.padding {
     padding: 12rem 0 11rem;
+  }
+
+  .column_placeholder {
+	display: block;
+  }
+
+  .column.padding {
+	backdrop-filter: blur(15px);
   }
 }
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
-  .section {
+  .section.padding, .column.padding {
     padding: 14rem 0 15rem;
   }
   .section-description {
@@ -70,7 +90,7 @@
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
-  .section {
+  .section.padding, .column.padding {
     padding: 20rem 0 19rem;
   }
 }
@@ -167,6 +187,14 @@
   color: #fff;
 }
 
+@media (max-width: 549px) {
+	.integration {
+		background-position: 10% 50%;
+	}
+}
+
+/* ------------------------------------------------- */
+
 .expand {
   background-image: url('../media/gps.jpg');
   background-size: cover;
@@ -174,6 +202,13 @@
   color: #fff;
 }
 
+@media (max-width: 549px) {
+	.expand {
+		background-position: 75% 50%;
+	}
+}
+
+/* ------------------------------------------------- */
 
 .shift {
   background-image: url('../media/shift.jpg');
@@ -182,6 +217,14 @@
   background-attachment: fixed;
   color: #fff;
 }
+
+@media (max-width: 549px) {
+	.shift {
+		background-position: 10% 50%;
+	}
+}
+
+/* ------------------------------------------------- */
 
 
 /*
@@ -218,12 +261,22 @@
 }
 */
 
+/* ------------------------------------------------- */
+
 .contact {
   background-image: url('../media/oled.jpg');
   background-size: cover;
   background-position: 50% 50%;
   color: #fff;
 }
+
+@media (max-width: 549px) {
+	.contact {
+		background-position: 90% 50%;
+	}
+}
+
+/* ------------------------------------------------- */
 
 .footer {
   background-color: #444;
