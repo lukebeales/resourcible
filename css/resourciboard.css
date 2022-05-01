@@ -207,6 +207,26 @@
 
 /* ------------------------------------------------- */
 
+.design {
+  background-image: url('../media/design.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.design_tint {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+@media (max-width: 549px) {
+	.shift {
+		background-position: 25% 50%;
+	}
+}
+
+/* ------------------------------------------------- */
+
 .shift {
   background-image: url('../media/shift.jpg');
   background-size: cover;
