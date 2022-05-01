@@ -72,78 +72,80 @@
 				<div class="one-half column padding timeline_tint">
 					<h3 class="section-heading">Here's how the resourciboard came about.</h3>
 					<div class="_timeline">
-						<div class="_timeline-container _timeline-container-left">
-							<div class="_timeline-container-content">
-								<h2>Digital Signage</h2>
-								<p>Researched a low cost, replaceable linux device for a new digital signage platform, based off a Raspberry Pi.  The Raspberry Pi was only new at the time and didn't have the software required, so other hardware was used instead.</p>
-								<img src="../media/signchro.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/products/signchro" target="_blank">Signchro</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-right">
-							<div class="_timeline-container-content">
-								<h2>Network monitoring tool</h2>
-								<p>Changed to Arduino based, restricted it to non-display and relay control, proved web connectivity via ethernet board, expanded with a few more sensors and a web based configurator, and finalised an enclosure.  Initial pcb design and fabrication, and assembly testing.</p>
-								<img src="../media/elbeano.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/elbeano-web-controlled-arduino-diagnostics-device/" target="_blank">Discover Elbeano</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-left">
-							<div class="_timeline-container-content">
-								<h2>ESP32-cam power cycle timer</h2>
-								<p>Based off a 555 chip with a few discrete components, using leftover enclosures from initial project.</p>
-								<img src="../media/birds.gif" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/arduino-attiny85-board/" target="_blank">Read about it</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-right">
-							<div class="_timeline-container-content">
-								<h2>Timer board changed to ATTiny85</h2>
-								<p>Allow for more accurate timings, added wifi connectivity via ESP12F to send sensor data without the ESP32-Cam, created cloud app to send and receive data, initial pcb layout</p>
-								<img src="../media/attiny85_board.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard/" target="_blank">See the technical bits</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-left">
-							<div class="_timeline-container-content">
-								<h2>ATTiny85 expanded</h2>
-								<p>Added bios-like functionality, added dedicated app chips, power finalisation, pcb finalisation and initial print</p>
-								<img src="../media/pcb_render.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-2/" target="_blank">Working it all out</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-right">
-							<div class="_timeline-container-content">
-								<h2>Sub board theory, prototype</h2>
-								<p>Added the idea of making this board and its power options the base for sub boards to give it much more capability.</p>
-								<img src="../media/prototype.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-3/" target="_blank">Prototype</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-left">
-							<div class="_timeline-container-content">
-								<h2>Sub boards</h2>
-								<p>Designed a number of sub boards for dedicated applications for the launch</p>
-								<img src="../media/sub-boards.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-4/" target="_blank">Sub boards</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-right">
-							<div class="_timeline-container-content">
-								<h2>Mass production</h2>
-								<p>Assembly order and component testing, to get costs and stability</p>
-								<img src="../media/mass-production.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-5/" target="_blank">Mass production</a>
-							</div>
-						</div>
-						<div class="_timeline-container _timeline-container-left">
-							<div class="_timeline-container-content">
-								<h2>SaaS, application firmware</h2>
-								<p>With the device proven and costs worked out, fixed up a few issues within the firmware and got the SaaS working nicer</p>
-								<img src="../media/products.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
-								<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-6/" target="_blank">Software</a>
-							</div>
-						</div>
+						<ul>
+							<li>
+								<div class="content">
+									<h5>Digital Signage</h5>
+									<p>Researched a low cost, replaceable linux device for a new digital signage platform, based off a Raspberry Pi.  The Raspberry Pi was only new at the time and didn't have the software required, so other hardware was used instead.</p>
+									<img src="../media/signchro.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/products/signchro" target="_blank">Signchro</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>Network monitoring tool</h5>
+									<p>Changed to Arduino based, restricted it to non-display and relay control, proved web connectivity via ethernet board, expanded with a few more sensors and a web based configurator, and finalised an enclosure.  Initial pcb design and fabrication, and assembly testing.</p>
+									<img src="../media/elbeano.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/elbeano-web-controlled-arduino-diagnostics-device/" target="_blank">Discover Elbeano</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>ESP32-cam power cycle timer</h5>
+									<p>Based off a 555 chip with a few discrete components, using leftover enclosures from initial project.</p>
+									<img src="../media/birds.gif" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/arduino-attiny85-board/" target="_blank">Read about it</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>Timer board changed to ATTiny85</h5>
+									<p>Allow for more accurate timings, added wifi connectivity via ESP12F to send sensor data without the ESP32-Cam, created cloud app to send and receive data, initial pcb layout</p>
+									<img src="../media/attiny85_board.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard/" target="_blank">See the technical bits</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>ATTiny85 expanded</h5>
+									<p>Added bios-like functionality, added dedicated app chips, power finalisation, pcb finalisation and initial print</p>
+									<img src="../media/pcb_render.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-2/" target="_blank">Working it all out</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>Sub board theory, prototype</h5>
+									<p>Added the idea of making this board and its power options the base for sub boards to give it much more capability.</p>
+									<img src="../media/prototype.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-3/" target="_blank">Prototype</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>Sub boards</h5>
+									<p>Designed a number of sub boards for dedicated applications for the launch</p>
+									<img src="../media/sub-boards.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-4/" target="_blank">Sub boards</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>Mass production</h5>
+									<p>Assembly order and component testing, to get costs and stability</p>
+									<img src="../media/mass-production.png" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-5/" target="_blank">Mass production</a>
+								</div>
+							</li>
+							<li>
+								<div class="content">
+									<h5>SaaS, application firmware</h5>
+									<p>With the device proven and costs worked out, fixed up a few issues within the firmware and got the SaaS working nicer</p>
+									<img src="../media/products.jpg" style="width: 100%; height: auto; max-width: 200px;" /><br />
+									<a class="button button-primary" href="https://lukebeales.com/articles/resourciboard-part-6/" target="_blank">Software</a>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

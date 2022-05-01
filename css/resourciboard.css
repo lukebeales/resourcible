@@ -18,6 +18,7 @@
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
+  align-items: center;
 }
 
 .section.padding, .column.padding {
