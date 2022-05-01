@@ -11,6 +11,15 @@
 	font-style: normal !important;
 }
 
+.column.padding {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
 .section.padding, .column.padding {
   padding: 8rem 0 7rem;
   text-align: center;
@@ -63,6 +72,16 @@
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
+  /* overwrite skeleton bits */
+    .one-half.column {
+        width: 50%;
+    }
+
+    .column, .columns {
+        margin-left: 0%;
+    }
+  /**/
+
   .section.padding, .column.padding {
     padding: 12rem 0 11rem;
   }
@@ -71,9 +90,11 @@
 	display: block;
   }
 
-  .column.padding {
+  /*
+    .column.padding {
 	backdrop-filter: blur(15px);
-  }
+    }
+  */
 }
 
 /* Bigger than 750 */
@@ -107,9 +128,9 @@
   background-size: cover;
   background-position: 75% 50%;
   color: #fff;
-  min-height: 400px;
 }
 
+/*
 .hero .container, .hero .container .row, .hero .container .row .one-half.column {
 	height: 100%;
 }
@@ -120,6 +141,7 @@
 	justify-content: center;
 	flex-direction: column;
 }
+*/
 
 @media (max-width: 549px) {
   .hero-heading {
@@ -132,7 +154,6 @@
   .hero {
     padding-bottom: 12rem;
     text-align: left;
-    height: 165px;
     background-position: 50% 50%;
   }
   .hero-heading {
@@ -141,9 +162,6 @@
 }
 
 @media (min-width: 750px) {
-  .hero {
-    height: 190px;
-  }
   .hero-heading {
     font-size: 2.6rem;
   }
@@ -175,20 +193,34 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline {
-  background-color: rgba(64, 64, 200, 1.0);
+  background-image: url('../media/boards.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #000;
+  background-attachment: fixed;
   color: #fff;
 }
 
-.integration {
-  background-image: url('../media/esp32.jpg');
+.timeline_tint {
+	background-color: rgba(205, 151, 12, 0.6) !important;
+}
+
+/* ------------------------------------------------- */
+
+.shift {
+  background-image: url('../media/shift.jpg');
   background-size: cover;
   background-position: 50% 50%;
   background-attachment: fixed;
   color: #fff;
 }
 
+.shift_tint {
+	background-color: rgba(187, 0, 111, 0.5) !important;
+}
+
 @media (max-width: 549px) {
-	.integration {
+	.shift {
 		background-position: 10% 50%;
 	}
 }
@@ -202,6 +234,10 @@
   color: #fff;
 }
 
+.expand_tint {
+	background-color: rgba(7, 113, 203, 0.6) !important;
+}
+
 @media (max-width: 549px) {
 	.expand {
 		background-position: 75% 50%;
@@ -210,19 +246,24 @@
 
 /* ------------------------------------------------- */
 
-.shift {
-  background-image: url('../media/shift.jpg');
+.integration {
+  background-image: url('../media/esp32.jpg');
   background-size: cover;
   background-position: 50% 50%;
   background-attachment: fixed;
   color: #fff;
 }
 
+.integration_tint {
+	background-color: rgba(201, 201, 59, 0.6) !important;
+}
+
 @media (max-width: 549px) {
-	.shift {
+	.integration {
 		background-position: 10% 50%;
 	}
 }
+
 
 /* ------------------------------------------------- */
 
@@ -240,15 +281,6 @@
   background-color: #000000;
   color: #FFFFFF;
   padding: 8rem 0 8rem !important;
-}
-
-.assembly {
-  background-image: url('../media/boards.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-color: #000;
-  background-attachment: fixed;
-  color: #fff;
 }
 
 /*
@@ -270,6 +302,10 @@
   color: #fff;
 }
 
+.contact_tint {
+	background-color: rgba(136, 83, 33, 0.6) !important;
+}
+
 @media (max-width: 549px) {
 	.contact {
 		background-position: 90% 50%;
@@ -279,6 +315,7 @@
 /* ------------------------------------------------- */
 
 .footer {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
   background-color: #444;
   color: #ccc;
 }
