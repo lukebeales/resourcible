@@ -27,14 +27,16 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	init();
 
 
-	// this is the carousel/slider
-	var splide = new Splide( '.splide', {
-		type   : 'loop',
-		perPage: 1,
-		autoplay: true,
-		pauseOnHover: true
-	});
-	splide.mount();
+	/*
+		// this is the carousel/slider
+		var splide = new Splide( '.splide', {
+			type   : 'loop',
+			perPage: 1,
+			autoplay: true,
+			pauseOnHover: true
+		});
+		splide.mount();
+	*/
 
 });
 
