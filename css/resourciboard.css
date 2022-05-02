@@ -74,11 +74,11 @@
 /* Bigger than 550 */
 @media (min-width: 550px) {
   /* overwrite skeleton bits */
-    .one-half.column {
+    .one-half.column.override {
         width: 50%;
     }
 
-    .column, .columns {
+    .column.override, .columns.override {
         margin-left: 0%;
     }
   /**/
