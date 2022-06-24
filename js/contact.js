@@ -35,7 +35,7 @@ function contact_form_init() {
 function contact_form_send(token) {
 	//e.preventDefault();
 
-	var URL = "https://3hi84hqchg.execute-api.ap-southeast-2.amazonaws.com";
+	var URL = "https://3hi84hqchg.execute-api.ap-southeast-2.amazonaws.com/contact_form";
 	var DATA = {
 		name: document.getElementById("contact-name").value,
 		email: document.getElementById("contact-email").value,
