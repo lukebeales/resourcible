@@ -5,10 +5,10 @@ function footer_init() {
 		<div class="row">
 			<div class="one-third column">
 				<h3 class="section-heading"><a href="https://resourcible.com" style="text-decoration: none; color: inherit;">Resourcible</a></h3>
-				A collective of IT industry specialists dedicated to delivering elegant solutions at scale
+				A collective of IT industry specialists dedicated to delivering elegant solutions at scale.  What can we do for you?
 			</div>
 			<div class="one-third column">
-				something in here
+				&nbsp;
 			</div>
 			<div class="one-third column">
 				<i class="fa-brands fa-linkedin fa-2x"></i>
