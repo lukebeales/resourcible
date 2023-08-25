@@ -13,13 +13,16 @@ function contact_form_init() {
 				</div>
 				<div class="six columns">
 					<label for="contact-email">Your email</label>
-					<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="contact-email" required="required">
+					<input class="u-full-width" type="email" placeholder="your@email.com" id="contact-email" required="required">
 				</div>
 			</div>
 			<label for="contact-reason">Reason for contacting</label>
 			<select class="u-full-width" id="contact-reason" required="required">
 				<option>Just asking</option>
 				<option>ResourciBoard</option>
+				<option>Software Engineering</option>
+				<option>SaaS</option>
+				<option>Analytics</option>
 			</select>
 			<label for="contact-message">Message (optional)</label>
 			<textarea class="u-full-width" placeholder="Hi…" id="contact-message"></textarea>
